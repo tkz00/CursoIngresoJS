@@ -4,6 +4,9 @@ y lo muestro por 'ID' al presionar el botón 'mostrar'
 */
 function mostrar()
 {
-	alert("ok");
+	var data;
+	data = prompt("Ingrese un dato");
+	txtIdNombre.value = data;
+	// alert("ok");
 }
 
