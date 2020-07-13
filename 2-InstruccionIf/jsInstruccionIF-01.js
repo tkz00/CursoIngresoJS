@@ -1,6 +1,11 @@
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
+	var age;
+	age = txtIdEdad.value;
+
+	if(age == 15)
+	{
+		alert("mi niña bonita");
+	}
 
 }//FIN DE LA FUNCIÓN
