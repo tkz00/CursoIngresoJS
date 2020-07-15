@@ -1,11 +1,12 @@
 function mostrar()
 {
-	//tomo la hora
-	var horaDelDia =txtIdHora.value;
-	alert(horaDelDia);
-	
-	
+	var sTimeOfDay = txtIdHora.value;
+	var timeOfDay = parseInt(sTimeOfDay);
 
-
-
-}//FIN DE LA FUNCIÓN
+	switch(true)
+	{
+		case timeOfDay >= 7 && timeOfDay <= 11:
+			alert("Es de mañana.");
+			break;
+	}
+}
