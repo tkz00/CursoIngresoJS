@@ -1,17 +1,35 @@
-/*1.	Para el departamento de facturación:
-A.	Ingresar tres precios de productos y mostrar la suma de los mismos.
-B.	Ingresar tres precios de productos y mostrar el promedio de los mismos.
-C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
-*/
 function Sumar () 
 {
-	
+    var firstPrice = parseInt(txtIdPrecioUno.value);
+    var secondPrice = parseInt(txtIdPrecioDos.value);
+    var thirdPrice = parseInt(txtIdPrecioTres.value);
+    var result;
+
+    result = firstPrice + secondPrice + thirdPrice;
+
+    alert("La suma de todos los precio es de: $" + result);
 }
+
 function Promedio () 
 {
-	
+	var firstPrice = parseInt(txtIdPrecioUno.value);
+    var secondPrice = parseInt(txtIdPrecioDos.value);
+    var thirdPrice = parseInt(txtIdPrecioTres.value);
+    var result;
+
+    result = (firstPrice + secondPrice + thirdPrice) / 3;
+
+    alert("La promedio de todos los precio es de: $" + result);
 }
+
 function PrecioFinal () 
 {
-	
+	var firstPrice = parseInt(txtIdPrecioUno.value);
+    var secondPrice = parseInt(txtIdPrecioDos.value);
+    var thirdPrice = parseInt(txtIdPrecioTres.value);
+    var result;
+
+    result = (firstPrice + secondPrice + thirdPrice) * 1.21;
+
+    alert("La precio final de todos los precio es de: $" + result);
 }

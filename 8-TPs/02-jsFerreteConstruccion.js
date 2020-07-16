@@ -1,18 +1,52 @@
-/*2.	Para el departamento de Construcción:
-A.	 mostrar la cantidad de alambre a comprar  si se ingresara el largo y el ancho de un terreno rectangular y se debe alambra con tres hilos de alambre.
-B.	mostrar la cantidad de alambre a comprar  si se ingresara el radio  de un terreno circular y se debe alambra con tres hilos de alambre.
-C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de cal, debemos mostrar cuantas bolsas se necesitan de cada uno para las medidas que nos ingresen.
-*/
-
 function Rectangulo () 
 {
-
+    if(txtIdLargo.value != "" && txtIdAncho.value != "")
+    {
+        var plotLenght = parseInt(txtIdLargo.value);
+        var plotWidth = parseInt(txtIdAncho.value);
+        var result;
+        
+        result = (plotLenght * 2 + plotWidth * 2) * 3;
+        
+        alert("El largo del alambre debe ser de " + result + " unidades.");
+    }
+    else{
+        alert("Por favor ingrese el ancho y el largo del terreno.")
+    }
 }
+
 function Circulo () 
 {
-	
+    if(txtIdRadio.value != "")
+    {
+        var plotRadius = parseInt(txtIdRadio.value);
+        var result;
+
+        result = (Math.PI * plotRadius * 2).toFixed(2);
+
+        alert("El largo del alambre debe ser de " + result + " unidades.");
+    }
+    else{
+        alert("Por favvor ingrese el radio del terreno.")
+    }
 }
 function Materiales () 
 {
-	
+    if(txtIdLargo.value != "" && txtIdAncho.value != "")
+    {
+        var plotLenght = parseInt(txtIdLargo.value);
+        var plotWidth = parseInt(txtIdAncho.value);
+        var totalConcrete;
+        var totalLime;
+        var concretePerSqMeter = 2;
+        var limePerSqMeter = 3;
+        
+        totalConcrete = (plotLenght * plotWidth) / 1 * concretePerSqMeter;
+        totalLime = (plotLenght * plotWidth) / 1 * limePerSqMeter;
+        
+        alert("Para realizar el contrapiso se necesitan " + totalConcrete + " bolsas de cemento y " + totalLime + " bolsas de cal.");
+    }
+    else{
+        alert("Por favor ingrese el ancho y el largo del terreno.")
+    }
 }
