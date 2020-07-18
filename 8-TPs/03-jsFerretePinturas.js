@@ -8,7 +8,7 @@ function FahrenheitCentigrados ()
     
     var result = (fahrenheit - 32) / 1.8;
 
-    alert(fahrenheit + " fahrenheit son " + result.toFixed(1) + " grados centígrados.")
+    alert(fahrenheit + "° fahrenheit son " + result.toFixed(1) + "° centígrados.")
 }
 
 function CentigradosFahrenheit () 
@@ -17,5 +17,5 @@ function CentigradosFahrenheit ()
     
     var result = celsius * 1.8 + 32;
 
-    alert(celsius + " grados centígrados son " + result.toFixed(1) + " grados fahrenheit.")
+    alert(celsius + "° centígrados son " + result.toFixed(1) + "° fahrenheit.")
 }

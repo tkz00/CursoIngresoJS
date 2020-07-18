@@ -30,12 +30,13 @@ function Circulo ()
         alert("Por favvor ingrese el radio del terreno.")
     }
 }
+
 function Materiales () 
 {
     if(txtIdLargo.value != "" && txtIdAncho.value != "")
     {
-        var plotLenght = parseInt(txtIdLargo.value);
-        var plotWidth = parseInt(txtIdAncho.value);
+        var plotLenght = parseFloat(txtIdLargo.value);
+        var plotWidth = parseFloat(txtIdAncho.value);
         var totalConcrete;
         var totalLime;
         var concretePerSqMeter = 2;
